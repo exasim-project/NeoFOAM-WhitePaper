@@ -13,7 +13,7 @@ Meanwhile, software development methodologies have undergone significant transfo
 This includes adopting more distributed and community-focused development models and incorporating automated workflows and modular software design. 
 Established software libraries frequently encounter the dilemma of determining whether to integrate evolutionary updates or to implement a revolutionary advancement.
 The latter is generally imperative when integrating recent advancements proves to be prohibitive in terms of cost.
-The authors believe that OpenFOAM requires a revolutionary design overhaul for reason that are detailed in this manuscript.
+The authors believe that OpenFOAM requires a revolutionary design overhaul for reasons that are detailed in this manuscript.
 
 ## Changes in the (HPC) hardware landscape
 
@@ -23,6 +23,6 @@ Moreover, the landscape is now marked by intensified competition among multiple 
 
 ## Developments in research software engineering
 
- - collaborative platforms like github and gitlab allow a more distributed and collaborative development
- - these platform also provide automated workflows to ensure good coding practises and testing
+ - collaborative platforms like GitHub and GitLab allow a more distributed and collaborative development
+ - these platforms also provide automated workflows to ensure good coding practices and testing
 
