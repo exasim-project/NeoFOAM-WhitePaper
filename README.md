@@ -1,2 +1,7 @@
-# NeoFOAMCommunity
-A collection of documents related to the NeoFOAM community and governance
+---
+title: "NeoFOAM - A Collaborative Effort for a Modern OpenFOAM"
+date: "Jan 2025"
+author: "The NeoFOAM Authors"
+---
+
+
