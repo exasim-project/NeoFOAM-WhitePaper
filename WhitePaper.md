@@ -27,7 +27,7 @@ Moreover, the landscape is now marked by intensified competition among multiple 
  - these platforms also provide automated workflows to ensure good coding practices and testing
 
 # The NeoFOAM architecture 
- - Kokkos [@Trott_Kokkos_3_Programming_2022] based approach
+ - Kokkos [@Trott2022] based approach
 
 ## Executor
 NeoFOAM uses the MPI+X approach for parallelism, where X is the execution space used for device parallelism.
