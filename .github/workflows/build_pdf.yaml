@@ -24,7 +24,7 @@ jobs:
 
     - name: Run pandoc
       run: |
-         pandoc -s -f markdown+smart -t markdown-smart --bibliography references.bib -o WhitePaper.pdf WhitePaper.md
+         pandoc -s -f markdown+citations --bibliography references.bib -o WhitePaper.pdf WhitePaper.md
 
     - name: Add to PDF to repo
       run: |
