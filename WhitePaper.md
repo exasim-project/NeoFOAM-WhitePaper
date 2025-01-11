@@ -2,6 +2,7 @@
 title: "NeoFOAM - A Collaborative Effort for a Modern OpenFOAM"
 date: "Jan 2025"
 author: "The NeoFOAM Authors"
+bibliography: references.bib
 ---
 
 # Motivation
@@ -43,3 +44,5 @@ The Executor class uses Kokkos, provides an interface for memory management, and
 # Future work
 ## LibTooling based OpenFOAM refactoring
 ## Package Manager
+
+# References
