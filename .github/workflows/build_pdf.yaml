@@ -26,6 +26,6 @@ jobs:
 
     - name: Add to PDF to repo
       run: |
-         git add WhitePaper.pfd
+         git add WhitePaper.pdf
          git commit -m 'update pdf'
          git push origin ${{ github.ref }}
