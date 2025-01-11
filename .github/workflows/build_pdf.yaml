@@ -1,0 +1,25 @@
+name: Build PDF
+run-name: Build PDF
+
+jobs:
+  build-pdf:
+    name: Build PDF
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install \
+          pandoc
+
+    - name: Run pandoc
+      run: |
+         pandoc WhitePaper.md
+
+    - name: Add to PDF to repo
+      run: |
+         git add WhitePaper.pfd
+         git commit -m 'update pdf'
+         git push origin ${{ github.ref }}
