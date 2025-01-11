@@ -1,6 +1,9 @@
 name: Build PDF
 run-name: Build PDF
 
+on:
+  push
+
 jobs:
   build-pdf:
     name: Build PDF
