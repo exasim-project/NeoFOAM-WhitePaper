@@ -26,3 +26,20 @@ Moreover, the landscape is now marked by intensified competition among multiple 
  - collaborative platforms like GitHub and GitLab allow a more distributed and collaborative development
  - these platforms also provide automated workflows to ensure good coding practices and testing
 
+# The NeoFOAM architecture 
+ - Kokkos [@Trott_Kokkos_3_Programming_2022] based approach
+
+## Executor
+NeoFOAM uses the MPI+X approach for parallelism, where X is the execution space used for device parallelism.
+The Executor class uses Kokkos, provides an interface for memory management, and specifies where to execute the operations:
+
+ - SerialExecutor: run on the CPU with MPI
+ - CPUExecutor: run on the CPU with either OpenMP or C++ Threads in Combination and MPI
+ - GPUExecutor: run on the GPU with MPI
+
+## Field 
+## DSL
+
+# Future work
+## LibTooling based OpenFOAM refactoring
+## Package Manager
