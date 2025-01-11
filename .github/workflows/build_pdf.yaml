@@ -19,7 +19,7 @@ jobs:
 
     - name: Run pandoc
       run: |
-         pandoc WhitePaper.md
+         pandoc -s -o WhitePaper.pdf WhitePaper.md
 
     - name: Add to PDF to repo
       run: |
