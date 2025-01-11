@@ -15,7 +15,9 @@ jobs:
       run: |
         sudo apt update
         sudo apt install \
-          pandoc
+          pandoc \
+          texlive-latex-base \
+          texlive-fonts-recommended 
 
     - name: Run pandoc
       run: |
