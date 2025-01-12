@@ -40,7 +40,30 @@ The Executor class uses Kokkos, provides an interface for memory management, and
  - GPUExecutor: run on the GPU with MPI
 
 ## Field 
+
+The Field class is the basic container class and is the central elements for implementing a platform portable CFD framework.
+Fields should allow to perform basic algebraic operations such as binary operations like the addition or subtraction of two fields, or scalar operations like the multiplication of a field with a scalar
+
 ## DSL
+
+The concept of a Domain Specific Language (DSL) allows to simplify the process of implementing and solving equations in a given programming language like C++.
+Engineers can express equations in a concise and readable form, closely resembling their mathematical representation, while no or little knowledge of the numerical schemes and implementation is required.
+This approach allows engineers to focus on the physics of the problem rather than the numerical implementation and helps in reducing the time and effort required to develop and maintain complex simulations.
+
+This approach is readable and easy to understand for engineers familiar with OpenFOAM.
+However, it has several limitations due to its implementation in OpenFOAM:
+
+- the solution system is always a sparse matrix
+- individual terms are eagerly evaluated, resulting in unnecessary use of temporaries
+- the sparse matrix is always an LDU matrix that is typicalle not supported by third-party linear solver libraries
+- Only cell-centred discretisation is supported
+
+NeoFOAM DSL tries to address these issues by providing:
+
+- lazy evaluation of the equations terms. This allows for better optimisation of the resulting equation and can reduce the number of required temporaries.
+- a more modular design
+- Support for standard matrix formats like COO and CSR, to simplify the use of external linear solvers
+
 
 # Future work
 ## LibTooling based OpenFOAM refactoring
