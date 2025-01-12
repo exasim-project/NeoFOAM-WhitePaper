@@ -32,6 +32,16 @@ Moreover, the landscape is now marked by intensified competition among multiple 
 
 In the following the key aspects of the NeoFOAM architecture are discussed. 
 
+The NeoFOAM project has set itself the goal of bringing modern software development methods to the core libraries of OpenFOAM.
+By reimplementing the libfiniteVolume and libOpenFOAM we want to deliver a code that:
+
+- is compliant with modern C++20;
+- is extensively unit-tested;
+- is platform portable and GPU ready;
+- is highly extensible via Plugins
+
+We aim for a high level of interoperability with OpenFOAM, however, if reasonable, NeoFOAM might deviate from the OpenFOAM API.
+
 ## The Executor Class
 NeoFOAM uses the MPI+X approach for parallelism, where X is the execution space used for device parallelism.
 The Executor class uses Kokkos [@Trott2022], provides an interface for memory management, and specifies where to execute the operations:
