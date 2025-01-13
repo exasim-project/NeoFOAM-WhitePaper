@@ -7,5 +7,5 @@ A document written by the community to highlight the general vision of NeoFOAM a
 
 1. Fork this repo, make your changes to the WhitePaper.md, and open a PR
 2. Merge conflicts are very likely to occur. 
-   To keep merge conflicts to a minimum,m it is advised to keep one sentence per line and rebase often.
+   To keep merge conflicts to a minimum,it is advised to keep one sentence per line and rebase often.
 3. Add yourself to the list of authors AUTHORS.md.
